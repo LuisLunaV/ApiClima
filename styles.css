@@ -3,6 +3,7 @@ body{
     height: 600px;
     background-color: #34495e;
     display: flex;
+    flex-direction: column;
     justify-content: center;
    
     
@@ -11,7 +12,7 @@ body{
 p{
     margin: 0px;
 }
-.container{
+.containe{
     background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     align-self: center;
     border-radius: 10px;
@@ -26,10 +27,11 @@ p{
 
 }
 
-.container .text-box{
+.containe .text-box{
    margin-top: 16px;
+   padding: 0px 10px 0px 10px;
 }
-.container .cont-list{
+.containe .cont-list{
     margin-top: 10px;
     text-align: center;
     align-self: center;
@@ -42,7 +44,7 @@ p{
    
     
 }
-.container .cont-list ul{
+.containe .cont-list ul{
     color: white;
 margin-right: 30px;
     list-style: none;
@@ -51,13 +53,15 @@ margin-right: 30px;
     
 }
 
-@media screen and (max-width:320px) {
- 
-    .container{
 
-        height: 320px;
+
+@media screen and (max-width:800px) {
+ 
+    .containe{
+
+        height: 420px;
         max-height:500px;
-        width: 100%;
+        width: 35%;
       
         
     
@@ -67,12 +71,11 @@ margin-right: 30px;
 
 @media screen and (max-width:400px) {
  
-    .container{
-
+    .containe{
         margin:0;
-        height: 420px;
+        height:420px;
         max-height:500px;
-        width: 200px;
+        width: 230px;
       
         
     
@@ -80,16 +83,3 @@ margin-right: 30px;
     
 }
 
-@media screen and (max-width:800px) {
- 
-    .container{
-
-        height: 420px;
-        max-height:500px;
-        width: 50%;
-      
-        
-    
-    }
-    
-}
