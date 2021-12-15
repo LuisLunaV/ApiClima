@@ -57,9 +57,13 @@ const getClima = async (ciudad) => {
     const resp = await fetch(urlApi);
 
     if (resp.ok) {
-      const { main, name, sys, weather } = await resp.json();
 
+      const { main, name, sys,weather } = await resp.json();
+//const { main, name, sys, timezone, weather } = await resp.json();
+// const hora= new Date((sys.sunrise + timezone)*1000);
+// console.log(hora);
       return { main, name, sys, weather };
+
     } else {
 
         
